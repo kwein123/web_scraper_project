@@ -1,0 +1,14 @@
+# =============================================================================
+# FILE: requirements.txt
+# Dependencies for the project
+# =============================================================================
+
+# Web scraping dependencies
+requests>=2.31.0
+beautifulsoup4>=4.12.2
+
+# Optional: for better HTML parsing
+lxml>=4.9.3
+
+# Optional: for progress bars
+tqdm>=4.66.1
