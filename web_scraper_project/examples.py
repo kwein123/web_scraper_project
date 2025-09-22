@@ -3,7 +3,7 @@
 # Examples of how to use the web scraper
 # =============================================================================
 
-from scraper import WebScraper
+from web_scraper_project.scraper import WebScraper
 
 def example_basic_usage():
     """Example of basic scraper usage."""

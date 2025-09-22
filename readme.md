@@ -37,18 +37,24 @@ pip install web_scraper_project
 
 ## Quick Start
 
-### Command Line Usage
-After installation, you can run the scraper directly:
-
+### **Command Line (Easiest)**
 ```bash
-web-scraper-project
-# or
+# Use default configuration
 webscraper
+
+# Custom URLs and terms
+webscraper --urls https://example.com --terms python web
+
+# See all options
+webscraper --help
+
+# Run examples
+webscraper --examples
 ```
 
-### Python Usage
-```python
-from scraper import WebScraper
+### **Python Code**
+```bash
+from web_scraper_project import WebScraper
 
 scraper = WebScraper(delay=1.0)
 results = scraper.scrape_urls(
@@ -62,17 +68,22 @@ scraper.print_results(results)
 
 ```
 web_scraper_project/
-├── scraper.py          # Main WebScraper class
-├── config.py           # Configuration settings
-├── main.py             # Main execution script
-├── test_scraper.py     # Unit tests
-├── example_usage.py    # Usage examples
-├── requirements.txt    # Dependencies
-├── setup.py           # Setup script
-├── pyproject.toml     # Modern Python packaging
-├── MANIFEST.in        # Package manifest
-├── LICENSE            # MIT License
-└── README.md          # This file
+├── web_scraper_project/      # Main package directory
+│   ├── __init__.py          # Package initialization
+│   ├── scraper.py           # Main WebScraper class
+│   ├── config.py            # Configuration settings
+│   ├── cli.py               # Command-line interface
+│   └── examples.py          # Usage examples
+├── tests/                   # Test directory
+│   ├── __init__.py
+│   └── test_scraper.py      # Unit tests
+├── setup.py                 # Minimal setup script
+├── setup.cfg                # Main configuration
+├── pyproject.toml           # Modern Python packaging
+├── requirements.txt         # Dependencies
+├── MANIFEST.in              # Package manifest
+├── LICENSE                  # MIT License
+└── README.md                # This file
 ```
 
 ## Configuration
@@ -103,7 +114,7 @@ SEARCH_IN = 'all'  # 'all', 'title', 'body', 'links'
 
 ### Basic Usage
 ```python
-from scraper import WebScraper
+from .scraper import WebScraper
 
 scraper = WebScraper(delay=1.0)
 results = scraper.scrape_urls(

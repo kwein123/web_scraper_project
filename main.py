@@ -3,8 +3,8 @@
 # Main execution script
 # =============================================================================
 
-from scraper import WebScraper
-from config import URLS, SEARCH_TERMS, SCRAPER_DELAY, CASE_SENSITIVE, SEARCH_IN
+from web_scraper_project.scraper import WebScraper
+from web_scraper_project.config import URLS, SEARCH_TERMS, SCRAPER_DELAY, CASE_SENSITIVE, SEARCH_IN
 
 def main():
     """Main function to run the web scraper."""
@@ -58,7 +58,7 @@ if __name__ == "__main__":
 # =============================================================================
 
 import unittest
-from scraper import WebScraper
+from web_scraper_project.scraper import WebScraper
 from bs4 import BeautifulSoup
 
 class TestWebScraper(unittest.TestCase):
