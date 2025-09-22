@@ -37,14 +37,14 @@ def read_requirements():
 
 setup(
     name="web_scraper_project",
-    version="1.0.0",
+    version="1.0.2",
     author="Kevin Weinrich",
     author_email="weinrichkevin@gmail.com",
     description="A simple, respectful web scraper built with Python and BeautifulSoup",
     long_description=read_readme(),
     long_description_content_type="text/markdown",
     url="https://github.com/kwein123/web_scraper_project",
-    packages=find_packages(),
+    #packages=find_packages(),
     py_modules=[
         'scraper',
         'config',
@@ -54,7 +54,7 @@ setup(
     classifiers=[
         "Development Status :: 4 - Beta",
         "Intended Audience :: Developers",
-        "License :: OSI Approved :: MIT License",
+        #"License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.7",
