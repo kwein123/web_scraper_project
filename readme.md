@@ -15,7 +15,7 @@ A simple, respectful web scraper built with Python and BeautifulSoup.
 
 ### From PyPI (if published)
 ```bash
-pip install web-scraper
+pip install web_scraper_project
 ```
 
 ### Development Installation
@@ -41,7 +41,7 @@ pip install web-scraper
 After installation, you can run the scraper directly:
 
 ```bash
-web-scraper
+web-scraper-project
 # or
 webscraper
 ```
@@ -61,7 +61,7 @@ scraper.print_results(results)
 ## File Structure
 
 ```
-web-scraper/
+web_scraper_project/
 ├── scraper.py          # Main WebScraper class
 ├── config.py           # Configuration settings
 ├── main.py             # Main execution script

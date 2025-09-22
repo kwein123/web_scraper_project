@@ -51,7 +51,7 @@ progress = [
 ]
 
 [project.scripts]
-web_scraper_project = "main:main"
+web-scraper-project = "main:main"
 webscraper = "main:main"
 
 [project.urls]
@@ -60,12 +60,12 @@ Documentation = "https://github.com/kwein123/web_scraper_project#readme"
 Repository = "https://github.com/kwein123/web_scraper_project"
 "Bug Reports" = "https://github.com/kwein123/web_scraper_project/issues"
 
+[tool.setuptools]
+py-modules = ["scraper", "config", "main", "example_usage"]
+
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["*"]
-
-[tool.setuptools.py-modules]
-py-modules = ["scraper", "config", "main", "example_usage"]
 
 # Black formatting configuration
 [tool.black]
