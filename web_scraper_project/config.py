@@ -11,7 +11,8 @@ URLS = [
     #"https://docs.python.org/3/",
     #"https://realpython.com"
     "https://nationalreview.com",
-	"https://clarionproject.org"
+	"https://clarionproject.org",
+	"https://tranquility.ai"
 ]
 
 # Terms to search for
@@ -25,7 +26,9 @@ SEARCH_TERMS = [
     "violence",
 	"extremism",
 	"threats",
-	"Charlie"
+	"Charlie",
+	"TimePilot",
+	"Security"
 ]
 
 # Scraper settings
