@@ -119,7 +119,6 @@ filterwarnings = [
 
 # setuptools_scm configuration for automatic versioning
 [tool.setuptools_scm]
-write_to = "_version.py"
 version_scheme = "guess-next-dev"
 local_scheme = "node-and-date"
 
