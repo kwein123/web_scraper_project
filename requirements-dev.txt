@@ -1,0 +1,18 @@
+# Development dependencies
+setuptools>=45
+wheel
+build
+setuptools_scm[toml]>=6.2
+
+# Testing
+pytest>=7.0.0
+pytest-cov>=4.0.0
+
+# Code quality
+black>=22.0.0
+flake8>=5.0.0
+mypy>=1.0.0
+
+# Optional: for better development experience
+ipython
+jupyter
