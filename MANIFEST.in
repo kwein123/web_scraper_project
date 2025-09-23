@@ -1,7 +1,7 @@
 include README.md
 include LICENSE
 include requirements.txt
-include requirements-dev.txt
+# include requirements-dev.txt
 recursive-include web_scraper_project *.py
 recursive-exclude * __pycache__
 recursive-exclude * *.py[co]
