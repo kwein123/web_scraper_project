@@ -1,6 +1,6 @@
 [build-system]
 requires = ["flit"]
-build-backend = "flit.build"
+build-backend = "flit_core.buildapi"
 
 [project]
 name = "web_scraper_project"
