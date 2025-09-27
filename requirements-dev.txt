@@ -1,5 +1,5 @@
 # Development dependencies
-setuptools>=45
+# setuptools>=45
 wheel
 build
 # setuptools_scm[toml]>=6.2
