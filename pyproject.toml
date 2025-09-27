@@ -1,10 +1,10 @@
 [build-system]
-requires = ["wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["flit"]
+build-backend = "flit.build"
 
 [project]
 name = "web_scraper_project"
-version = "1.0.6"
+version = "1.0.7"
 description = "A simple, respectful web scraper built with Python and BeautifulSoup"
 readme = "README.md"
 requires-python = ">=3.7"
@@ -35,7 +35,7 @@ classifiers = [
 dependencies = [
     "requests>=2.31.0",
     "beautifulsoup4>=4.12.2",
-    "lxml>=4.9.3",
+    #"lxml>=4.9.3",
 ]
 
 [project.optional-dependencies]
@@ -45,9 +45,6 @@ dev = [
     "black>=22.0.0",
     "flake8>=5.0.0",
     "mypy>=1.0.0",
-]
-progress = [
-    "tqdm>=4.66.1",
 ]
 
 [project.scripts]
@@ -60,13 +57,6 @@ Homepage = "https://github.com/kwein123/web_scraper_project"
 Documentation = "https://github.com/kwein123/web_scraper_project#readme"
 Repository = "https://github.com/kwein123/web_scraper_project"
 "Bug Reports" = "https://github.com/kwein123/web_scraper_project/issues"
-
-[tool.setuptools]
-packages = ["web_scraper_project"]
-
-[tool.setuptools.packages.find]
-where = ["."]
-include = ["web_scraper_project*"]
 
 # Black formatting configuration
 [tool.black]

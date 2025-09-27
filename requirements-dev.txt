@@ -1,7 +1,8 @@
 # Development dependencies
 # setuptools>=45
-wheel
-build
+#flit
+#wheel
+#build
 # setuptools_scm[toml]>=6.2
 
 # Testing
@@ -14,5 +15,5 @@ flake8>=5.0.0
 mypy>=1.0.0
 
 # Optional: for better development experience
-ipython
-jupyter
+#ipython
+#jupyter

@@ -6,9 +6,10 @@
 # Web scraping dependencies
 requests>=2.31.0
 beautifulsoup4>=4.12.2
+#bs4>=0.0.2
 
 # Optional: for better HTML parsing
-lxml>=4.9.3
+#lxml>=4.9.3
 
 # Optional: for progress bars
-tqdm>=4.66.1
+#tqdm>=4.66.1

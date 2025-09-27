@@ -4,7 +4,7 @@
         {
             "label": "Setup Development Environment",
             "type": "shell",
-            "command": "pip install --upgrade pip setuptools wheel build setuptools_scm && pip install -e '.[dev]'",
+            "command": "pip install --upgrade pip flit && pip install -e '.[dev]'",
             "group": "build",
             "presentation": {
                 "reveal": "always",
